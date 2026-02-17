@@ -528,7 +528,6 @@ if [ "$CONFIG_FIRMWARE_INCLUDE_WIREGUARD" = "y" ] ; then
 fi
 
 if [ "$CONFIG_FIRMWARE_INCLUDE_AMNEZIAWG" = "y" ]; then
-	func_disable_kernel_param "CONFIG_WIREGUARD"
 	func_enable_kernel_param_as_m "CONFIG_AMNEZIAWG"
 #        func_enable_kernel_param "CONFIG_AMNEZIAWG_DEBUG"
 fi
